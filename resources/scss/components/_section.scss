@@ -1,0 +1,24 @@
+.section {
+    padding-top: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
+
+    @include media-breakpoint-up(md) {
+        padding-top: map-get($spacers, 6);
+        padding-bottom: map-get($spacers, 6);
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: map-get($spacers, 7);
+        padding-bottom: map-get($spacers, 7);
+    }
+
+    @include media-breakpoint-up(x3l) {
+        padding-top: map-get($spacers, 8);
+        padding-bottom: map-get($spacers, 8);
+    }
+}
+
+.section-container {
+    margin-top: -1 * map-get($spacers, 3);
+    margin-bottom: -1 * map-get($spacers, 3);
+}

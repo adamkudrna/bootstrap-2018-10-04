@@ -1,0 +1,10 @@
+.icon {
+    width: 3rem;
+    height: 3rem;
+    fill: currentColor;
+
+    @include media-breakpoint-up(lg) {
+        width: 4rem;
+        height: 4rem;
+    }
+}

@@ -1,0 +1,17 @@
+.bg-gradient {
+    background:
+        linear-gradient(
+            to right,
+            map-get($theme-colors, 'blue-dark'),
+            map-get($theme-colors, 'green-dark')
+        ) repeat-y;
+}
+
+.bg-gradient-light {
+    background:
+        linear-gradient(
+            to right,
+            transparentize($secondary, 0.85),
+            transparentize($primary, 0.85)
+        ) repeat-y;
+}

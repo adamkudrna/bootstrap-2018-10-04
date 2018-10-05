@@ -1,0 +1,30 @@
+.profile {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @include media-breakpoint-up(sm) {
+        flex-flow: row nowrap;
+    }
+}
+
+.profile-image {
+    margin-bottom: map-get($spacers, 3);
+
+    @include media-breakpoint-up(sm) {
+        margin-right: map-get($spacers, 3);
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-right: map-get($spacers, 4);
+    }
+}
+
+.profile-body {
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+        text-align: left;
+    }
+}

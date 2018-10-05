@@ -1,0 +1,81 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    x2l: 1400px,
+    x3l: 1500px,
+    x4l: 2000px
+);
+$grid-columns: 12;
+$grid-gutter-width: 1rem;
+
+$spacers: (
+    5: ($spacer * 2),
+    6: ($spacer * 3),
+    7: ($spacer * 4),
+    8: ($spacer * 5),
+    9: ($spacer * 7),
+    10: ($spacer * 9)
+);
+
+$theme-colors: (
+    'blue': #60b0cc,
+    'blue-dark': #479fbf,
+    'green': #5fdbb2,
+    'green-dark': #45d0a3,
+    'violet': #6a7dcc,
+    'purple': #986be3,
+    'brown': #6a625b,
+    'gray-dark': #404040
+);
+$primary: map-get($theme-colors, 'blue');
+$secondary: map-get($theme-colors, 'green');
+
+$font-size-lg: 1.111111rem;
+$font-size-sm: 0.888888rem;
+
+$line-height-base: 1.45;
+
+$h1-font-size-xs: 2.25rem !default;
+$h1-font-size-sm: 2.5rem !default;
+$h1-font-size-md: 3rem !default;
+$h1-font-size-lg: 4rem !default;
+$h1-font-size: $h1-font-size-xs;
+$h2-font-size-xs: 1.5rem !default;
+$h2-font-size-md: 2rem !default;
+$h2-font-size-lg: 2.666666rem !default;
+$h2-font-size: $h2-font-size-xs;
+$h3-font-size-xs: 0.888888rem !default;
+$h3-font-size-md: 1rem !default;
+$h3-font-size-lg: 1.111111rem !default;
+$h3-font-size: $h3-font-size-xs;
+
+$headings-line-height: 1.2;
+
+$small-font-size: $font-size-sm;
+
+$link-color: $primary;
+$link-hover-color: $secondary;
+
+$lead-font-size: $font-size-lg;
+$lead-font-size-lg: 1.333333rem;
+
+$blockquote-font-size: $font-size-lg;
+$blockquote-small-color: inherit;
+
+$border-radius: 0.222222rem;
+
+$input-btn-padding-y-lg: 0.8rem;
+$input-btn-padding-x-lg: 2.75rem;
+
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+$btn-line-height: $line-height-base;
+$btn-border-radius: $border-radius;
+
+$card-deck-margin: ($grid-gutter-width / 2);

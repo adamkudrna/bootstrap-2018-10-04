@@ -1,0 +1,7 @@
+{
+  "extends" : ["@visionappscz/visionapps"],
+  "env": {
+    "browser": true,
+    "jquery": true
+  }
+}

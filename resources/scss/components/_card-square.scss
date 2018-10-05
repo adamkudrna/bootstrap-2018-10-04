@@ -1,0 +1,88 @@
+.card-square {
+    @include media-breakpoint-up(md) {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+    }
+}
+
+.card-square .card-body {
+    display: flex;
+    align-items: center;
+    padding: map-get($spacers, 1);
+
+    @include media-breakpoint-up(sm) {
+        justify-content: center;
+        padding: map-get($spacers, 2);
+        padding-bottom: map-get($spacers, 3);
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: map-get($spacers, 3);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-lg;
+    }
+}
+
+.card-square .card-text {
+    line-height: 1.333333;
+
+    @include media-breakpoint-up(md) {
+        display: block;
+        max-width: 15ch;
+        min-height: 2em * $line-height-base;
+    }
+}
+
+.card-deck-squares {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(sm) {
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-right: -$card-deck-margin;
+        margin-left: -$card-deck-margin;
+    }
+}
+
+// stylelint-disable no-descending-specificity, selector-max-specificity
+.card-deck-squares .card {
+    margin-bottom: map-get($spacers, 3);
+
+    @include media-breakpoint-up(sm) {
+        display: flex;
+        flex: 1 0 45%;
+        flex-direction: column;
+        margin-right: $card-deck-margin;
+        margin-bottom: 2 * $card-deck-margin; // Override the default
+        margin-left: $card-deck-margin;
+    }
+
+    @include media-breakpoint-up(sm) {
+        &:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        flex-basis: 0%;
+        margin-bottom: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
